@@ -33,7 +33,7 @@ root = tk.Tk()
 
 root.title("Exchange Rate Conversion")
 
-root.geometry("300x400")
+root.geometry("300x300")
 
 base_currency_prompt = tk.Label(root, text="Enter the base currency")
 base_currency_prompt.pack()
@@ -47,12 +47,6 @@ converting_currency_prompt.pack()
 convert_entry = tk.Entry(root)
 convert_entry.pack()
 
-base_currency_label_output = tk.Label(root, text="")
-base_currency_label_output.pack()
-
-output_label = tk.Label(root, text="")
-output_label.pack()
-
 amount_prompt = tk.Label(root, text="Enter the amount of money to convert")
 amount_prompt.pack()
 
@@ -61,5 +55,8 @@ amount_entry.pack()
 
 button = tk.Button(root, text="Convert", command=convert)
 button.pack()
+
+output_label = tk.Label(root, text="")
+output_label.pack()
 
 root.mainloop()
